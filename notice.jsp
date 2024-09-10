@@ -48,9 +48,8 @@
 	}
 %>
 </table>
+
 <a href="noticeReg.jsp">글쓰기</a>
-
-
 </body>
 </html>
 <%

@@ -17,7 +17,5 @@
 	<input type="button" value="cancel" class="cancel" />
 
 </form>
-
-
 </body>
 </html>
