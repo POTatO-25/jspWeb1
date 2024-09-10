@@ -67,7 +67,7 @@
 	</tboby>
 </table>
 <a href="noticeEdit.jsp?c=<%= rs.getInt("seq") %>">수정하기</a>
-<a href="">삭제하기</a>
+<a href="noticeDelProc.jsp?c=<%= rs.getInt("seq") %>">삭제하기</a>
 <a href="./notice.jsp">목록</a>
 </body>
 </html>
