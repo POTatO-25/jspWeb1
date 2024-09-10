@@ -11,9 +11,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-
 <%
-	String sql = "select seq, title, writer, content, regdate, hit from notices order by seq desc";
+	String sql = "select seq, title, writer, content, regdate, hit from notices order by seq";
 	// DB 접속
 	Class.forName("oracle.jdbc.driver.OracleDriver");
 	String url = "jdbc:oracle:thin:@localhost:1521:xe";
@@ -49,5 +48,14 @@
 	}
 %>
 </table>
+<a href="noticeReg.jsp">글쓰기</a>
+
+
 </body>
 </html>
+<%
+	// 자원 회수
+	rs.close();
+	stmt.close();
+	conn.close();
+%>
